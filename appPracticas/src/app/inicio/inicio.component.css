@@ -1,0 +1,22 @@
+section{
+    margin: 100px auto;
+  }
+  #seccionFestivales{
+    margin: 0 auto;
+  
+  }
+  
+  .row{
+    justify-content: center;
+  }
+  video{
+    width: 100%;
+  }
+  img{
+    width: 100%;
+  }
+  
+  #logeado{
+    font-size: 13px;
+    color: white;
+  }

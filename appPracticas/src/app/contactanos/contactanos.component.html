@@ -1,0 +1,26 @@
+<div class="container my-5">
+    <h1>contactanos</h1>
+
+    <form [formGroup]="form"  (ngSubmit)="enviar(form.value)">
+
+        <label for="usuario">Usuario:</label>
+        <input class="form-control" type="text" name="usuario" id="usuario" formControlName="usuario">
+        <br>
+
+        <label for="email">Email:</label>
+        <input class="form-control" type="text" name="email" id="email" formControlName="email">
+        <br>
+        
+        <label for="clave">Comentario:</label>
+        <!-- <input class="form-control" type="text" name="comentario" id="comentario" formControlName="comentario"> -->
+
+        <textarea name="comentario" class="form-control" formControlName="comentario" id="comentario" cols="30" rows="10"></textarea>
+        <br>
+        
+        
+        <button [classList]="boton" [disabled]="form.invalid" type="submit" id="boton-contactanos">Enviar</button>
+
+    </form>
+</div>
+
+

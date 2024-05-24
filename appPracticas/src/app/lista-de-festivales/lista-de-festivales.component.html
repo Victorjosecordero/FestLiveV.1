@@ -1,0 +1,41 @@
+<section id="sectionProximosFest" class="my-5">
+    <div class="container">
+      <h2>Proximos Festivales</h2>
+      <div class="row">
+
+       @for (festival of festivales; track festival.id) {
+        <div class="col-2 text-center lista-festivales">
+          <h4>{{festival.nombre}}</h4>
+          <a href='{{festival.url}}'>
+            <img src="../assets/carteles.png"  alt="">
+          </a>
+          <p>{{festival.fechaInicio}} - {{festival.fechaFinalizacion}}</p>
+          <p>{{festival.lugar}} - {{festival.pais}}</p>
+          <button class="btn btn-primary">Ver mas</button>
+        </div>
+       }
+      </div>
+    </div>
+  </section>
+  <section id="sectionProximosFest" class="my-5">
+    <div class="container">
+      <h2>Proximos Festivales</h2>
+      <div class="row">
+
+       @for (festival of festivales; track festival.id) {
+        <div class="col-2 text-center lista-festivales " data-aos="fade-down" data-aos-duration="2000">
+          <h4>{{festival.nombre}}</h4>
+          <a href='{{festival.url}}'>
+            <img src="../assets/carteles.png"  alt="">
+          </a>
+          <p>{{festival.fechaInicio}} - {{festival.fechaFinalizacion}}</p>
+          <p>{{festival.lugar}} - {{festival.pais}}</p>
+          <button class="btn btn-primary">Ver mas</button>
+        </div>
+       }
+      </div>
+    </div>
+  </section>
+  <script>
+    AOS.init();
+  </script>

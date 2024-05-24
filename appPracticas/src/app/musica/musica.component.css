@@ -1,0 +1,14 @@
+.botonmusica{
+    position: absolute;
+    top: 0;
+    left: auto;
+    background-color: transparent;
+    top:5;
+    left:8%;
+    width: 20px;
+
+}
+.botonmusica #muted{
+    width: 100%;
+    height: 100%;
+}

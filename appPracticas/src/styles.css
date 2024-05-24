@@ -1,0 +1,68 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+@font-face {
+  font-family: 'Atomic';
+  src: url('./assets/atomic.woff2');
+}
+*{
+  font-family: 'Atomic';
+  color:#cceb34;
+  text-transform: lowercase;
+}
+
+header {
+    background-color: #2E282A; 
+    color: white;
+    padding: 5px 30px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    max-height: 130px;
+    border-bottom:3px  grey solid;
+  }
+  body{
+    background-color: #121212f0;
+  }
+  footer{
+    padding: 30px 20px;
+    align-items: center;
+    background-color: #2E282A;
+    color: white;
+    bottom: 0;
+    height: 150px;
+    margin: 0 auto;
+  }
+  footer ul{
+    list-style: none;
+  }
+  
+  .logo img {
+    max-width: 200px; 
+  }
+  nav {
+    text-align: center; 
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+    padding: 0px 20px; 
+  }
+  nav ul li:last-child {
+    margin-right: 0; 
+  }
+  nav ul li a { 
+    text-decoration: none;
+  }
+
+  a{
+    text-decoration: none;
+    color:#cceb34
+  }

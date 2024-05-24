@@ -1,0 +1,47 @@
+
+section{
+  margin: 100px auto;
+}
+#seccionFestivales{
+  margin: 0 auto;
+
+}
+
+.row{
+  justify-content: center;
+}
+video{
+  width: 100%;
+}
+img{
+  width: 100%;
+}
+.proximosFestivales img{
+  margin: 10px auto;
+}
+.proximosFestivales p,.proximosFestivales button{
+  margin:5px auto;
+}
+
+#logeado{
+  font-size: 13px;
+  color: white;
+}
+.lista-festivales p{
+  margin:0;
+}
+#musicaNombre{
+  font-size: small;
+  color:#cceb34;
+}
+#muted{
+width: 30px;
+height: 20px;
+  margin-left: 10px;
+  color:#cceb34 ;
+}
+.botonlogin{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}

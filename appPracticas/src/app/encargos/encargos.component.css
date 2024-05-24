@@ -1,0 +1,4 @@
+.letra-normal h2,.letra-normal h3,.letra-normal p{
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: none;
+}

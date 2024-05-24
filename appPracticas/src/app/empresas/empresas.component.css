@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly
+}
+
+.contendor-img {
+    width: 45%; /* Calculamos el ancho para que haya espacio entre los divs */
+    margin: 10px; /* Espacio entre los divs */
+    border:1px solid transparent;
+    box-shadow: 1px;
+    background: linear-gradient(#ffffff1a 0%,#0000 100%);
+}
+.contendor-img img{ width: 100%;}

@@ -1,0 +1,53 @@
+<main>
+    <div class="container mb-5">
+
+        <h1>Bienvenido a los festivales</h1>
+        @for(evento of lista_eventos; track evento.id) {
+            
+            <div class="row ">
+                <div class="col-6 text-center">
+                    <img [src]="evento.urlImg" alt="">
+                    <p>{{evento.ciudad}}-{{evento.pais}}</p>
+                    <p>{{evento.fechaInicio | formatFecha: evento.fechaInicio :evento.fechaFin}}</p>
+                </div>
+                <div class="col-6">
+                    <h3 class=" ">Nombre:{{evento.nombreEvento}}</h3>
+                    <div class="row text-center">
+                        <div class="col-2">
+                            <p>Entradas Normales <br> {{evento.entradasNormales}}</p>
+                            <hr>
+                            <p>Precio Entradas Normales <br> {{evento.PrecioEntradasNormales}}</p>
+                            <button>Comprar</button>
+                        </div>
+                        <div class="col-2">
+                            <p>Entradas Premiun  <br>  {{evento.entradasPremiun}}</p>
+                            <hr>
+                            <p>Precio Entradas Premiun <br> {{evento.PrecioEntradasPremiun}}</p>
+                            <button>Comprar</button>
+
+                        </div>
+                        <div class="col-2">
+                            <p>Entradas Platinum <br> {{evento.entradasPlatinum}}</p>
+                            <hr>
+                            <p>Precio Entradas Platinum <br> {{evento.PrecioEntradasPlatinum}}</p>
+                            <button>Comprar</button>
+
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                    
+
+                
+                
+                
+            </div>
+
+    
+            
+        }
+    </div>
+    </main>
+
+

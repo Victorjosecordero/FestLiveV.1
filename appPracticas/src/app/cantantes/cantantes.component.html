@@ -1,0 +1,73 @@
+<div class="container text-center">
+    <div *ngIf="artistaSeleccionado" class="mt-5">
+        <div class="row">
+          <div class="col-4 titulos" >
+            <div class="border border-primary">
+              <p>Genero Musical</p>
+              <p class="datos">{{artistaSeleccionado.generoMusical}}</p>
+            </div>
+            <div class="border border-primary">
+              <p>Altura</p>
+              <p class="datos">{{artistaSeleccionado.altura}}</p>
+            </div>
+            <div class="border border-primary">
+              <p>Edad</p>
+              <p class="datos">{{artistaSeleccionado.edad}}</p>
+            </div>
+
+          </div>
+          <div class="col-4">
+            <img class="artistaSeleccionado" src="./../../assets/cantantes-img/{{artistaSeleccionado.urlImg}}" alt="imagen-Artista2" >
+            <div>
+              <h4 class="datos">{{artistaSeleccionado.nombreArtista}}</h4>
+              <span>nombre artistico</span>
+              <hr>
+            </div>
+            <h4 class="datos text-lowercase">{{artistaSeleccionado.nombrePersona}}</h4>
+            <span>nombre</span>
+          </div>
+          <div class="col-4">
+            <h3>top canciones</h3>
+            <ul>
+
+              @for(cancion of artistaSeleccionado.canciones; track cancion.id){
+                
+              
+                <li (click)="openSong(cancion)">{{cancion.replaceAll("-"," ")}}</li>
+                
+              }
+              <div class="border border-primary">
+                <img src="./../../assets/simbolo-de-interfaz-de-subir-volumen.png" alt="icono de sonido para la barra de sonido"><br>
+                <input  class="barra-sonido" type="range" max="1" step="0.01" value="0.2" (input)="vol($event)" >
+              </div>
+
+              <!-- /*<input disabled class="barra-sonido2" type="range" max="1" step="0.01" value="0.5" (input)="vol($event)" >*/ -->
+            </ul>
+          </div>
+        </div>
+    </div>
+</div>
+    
+<div>
+  <div class="container">
+    <div class="fondo-cantante">
+      <div class="div-iconos-cantantes" *ngFor="let cantante of lista_cantantes">
+              <img class="iconos-contantes" src="./../../assets/cantantes-img/{{cantante.urlImg}}" (click)="seleccionarArtista(cantante)">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <div>
+  
+  Music Player
+
+  <ol>
+    <li *ngFor="let item of songs" (click)="openSong(item.url)">{{item.name}}</li>
+  </ol>
+  <button (click)="playSong()">Play</button>
+  <button (click)="pauseSong()">Pause</button>
+  <button (click)="stopSong()">Stop</button>
+
+</div> -->

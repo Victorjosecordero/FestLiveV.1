@@ -1,0 +1,104 @@
+*{
+    text-transform: lowercase;
+}
+@font-face {
+    font-family: 'Atomic';
+    src: url('./../../assets/atomic.woff2');
+  }
+ul{
+    white-space: nowrap;
+    overflow: hidden;
+}
+h2,h3,h4,p,span{
+    color:#cceb34;
+    font-family: 'Atomic';
+    text-shadow: yellow  0px 1px;
+    font-size: 50px;
+}
+
+li{
+    list-style: none;
+    color:#cceb34;
+    font-family: 'Atomic';
+
+    
+}
+.fondo-cantante{
+    width: fit-content;
+}
+.fondo-cantante div{
+    display: inline !important;
+    width: fit-content;
+    margin:10px 20px
+}
+
+.datos{
+position:relative;
+/*top: -100px;*/
+    margin:0 auto;
+    font-size: 37px;
+}
+
+.iconos-contantes{
+    max-width: 100px;
+}
+
+span{
+    position: relative;
+    font-size: 30px;
+    /*top: -50px;*/
+}
+.titulos p{
+    font-size: 32px;
+    margin: 0;
+
+}
+.titulos div{
+    margin: 20px auto;
+}
+.border-primary{
+    border-color: #cceb34 !important;
+}
+.barra-sonido{
+    
+    color:white;
+    width: 100%;
+    z-index: 4;
+
+}
+
+
+
+
+
+.barra-sonido2 {
+
+    background-color: rgba(255,255,255, .2);
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 20rem;
+    height: 3.5rem;
+    transform: rotate(-90deg);
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: default;
+    
+    &[step]{
+      background-color: #cceb34;
+     
+    }
+  
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 0;
+      box-shadow: -20rem 0 0 20rem rgba(#fff, 0.2);
+    }
+  
+    &::-moz-range-thumb {
+      border: none;
+      width: 0;
+      box-shadow: -20rem 0 0 20rem rgba(#fff, 0.2);
+    }
+  }
+  

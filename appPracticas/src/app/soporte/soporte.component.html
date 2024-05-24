@@ -1,0 +1,51 @@
+<div class="container my-4 py-4">
+    
+    <h1>Formulario Soporte</h1>
+    
+
+    <form [formGroup]="form"  (ngSubmit)="enviar(form.value)">
+        <!-- <span class="p-float-label">
+            <input class="form-control" pInputText id="username" [(ngModel)]="value"  formControlName="username" />
+            <label for="username">Username</label>
+        </span>
+        <br>
+        <span class="p-float-label">
+            <input class="form-control" pInputText id="email" [(ngModel)]="value"  formControlName="email"/>
+            <label for="email">Email</label>
+        </span>
+        <div *ngIf="form.get('email')?.hasError('email') && form.get('email')?.touched"> Es necesario una email</div>
+        <br>
+        <span class="p-float-label">
+            <p-password   [(ngModel)]="value">
+                <ng-template pTemplate="header">
+                    <h6>Pick a password</h6>
+                </ng-template>
+                <ng-template pTemplate="footer">
+                    <hr>
+                    <p class="mt-2">Suggestions</p>
+                    <ul class="pl-2 ml-2 mt-0" style="line-height: 1.5">
+                        <li>At least one lowercase</li>
+                        <li>At least one uppercase</li>
+                        <li>At least one numeric</li>
+                        <li>Minimum 8 characters</li>
+                    </ul>
+                </ng-template>
+            </p-password>
+            <label for="clave">Contraseña</label>
+        </span> -->
+        <label for="usuario">Usuario:</label>
+        <input class="form-control" type="text" name="usuario" id="usuario" formControlName="usuario">
+        <br>
+
+        <label for="email">Email:</label>
+        <input class="form-control" type="text" name="email" id="email" formControlName="email">
+        <br>
+        
+        <label for="clave">Contraseña:</label>
+        <input class="form-control" type="password" name="clave" id="clave" formControlName="clave">
+        <br>
+        
+        
+        <button [classList]="boton" [disabled]="form.invalid" type="submit">Registrarse</button>
+    </form>
+</div> 

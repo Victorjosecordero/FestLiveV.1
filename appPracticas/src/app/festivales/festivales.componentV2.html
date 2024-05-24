@@ -1,0 +1,30 @@
+<main>
+    <h1>Bienvenido a los festivales</h1>
+    @for(festival of festivales; track festival.id) {
+
+        <div class="container text-center">
+            <div>
+                <h3>{{festival.nombre}}</h3>
+            </div>
+
+
+
+
+            <div class="">
+                <h4 class="mb-4">Entradas</h4>
+                <div class="row ">
+                @for(entrada of festival.entradas; track entrada.id){
+                    <div class="col-4 text-center">
+                        <h4>{{entrada.nombreEntr}}</h4>
+                        <p>Precio:{{entrada.precio}}</p>
+                        <p>Disponibles:{{entrada.disponibles}}</p>
+                        <button>Comprar Entrada</button>
+                    </div>
+                }
+                </div>
+                
+                  
+            </div>
+        </div>
+    }
+</main>

@@ -1,0 +1,13 @@
+.letra-normal h2,.letra-normal h4,.letra-normal p{
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: none;
+    color: white;
+}
+
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: none;
+}
+.subrayado{
+    text-decoration: underline;
+}

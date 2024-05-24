@@ -1,0 +1,35 @@
+#map {
+    height: 100%;
+}
+  /*
+   * Optional: Makes the sample page fill the window.
+   */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  div.gm-style .gm-style-iw-c{
+    background-color: black !important;
+    padding: 10px !important;
+    border-radius: 5px !important;
+  }
+  div.gm-style-iw ´.gm-style-iw-c{
+    background-color: black;
+    padding: 10px !important;
+    border-radius: 5px !important;
+  }
+  .infowindow {
+    background-color: black !important;
+    padding: 10px !important;
+    border-radius: 5px !important;
+  }
+  .gm-style-iw-d{
+    overflow: hidden !important;
+  }
+  .gm-style-iw {
+    overflow:hidden!important;
+    height:55px!important; 
+}

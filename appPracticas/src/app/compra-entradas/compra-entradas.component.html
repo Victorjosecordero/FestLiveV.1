@@ -1,0 +1,23 @@
+<div class="container">
+    <h2>Comprar Entradas</h2>
+
+    <div class="row justify-content-around">
+        <div class="col-4">
+            <img src="" alt="">
+            <p>Nombre Evento:</p>
+            <p>Fecha:</p>
+        </div>
+        <div class="col-4">
+            <div class="entrada-container text-center">
+                <h3>Nombre:{{nombre}}</h3>
+                <hr>
+                <p>Fecha:{{fecha}}</p>
+                <button (click)="restarCantidad()">-</button>
+                <input type="number" [(ngModel)]="cantidad" min="0">
+                <button (click)="sumarCantidad()">+</button>
+             </div>
+        </div>
+    </div>
+</div>
+
+

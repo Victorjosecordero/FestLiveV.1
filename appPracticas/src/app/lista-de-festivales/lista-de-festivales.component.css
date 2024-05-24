@@ -1,0 +1,14 @@
+.proximosFestivales img{
+    margin: 10px auto;
+  }
+  .proximosFestivales p,.proximosFestivales button{
+    margin:5px auto;
+  }
+  .proximosFestivales button{
+  }
+  img{
+    width: 100%;
+  }
+  .lista-festivales p{
+    margin:0;
+}

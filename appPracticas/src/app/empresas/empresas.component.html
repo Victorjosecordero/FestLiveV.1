@@ -1,0 +1,14 @@
+<div class="container w-50 my-5">
+
+
+        @for (empresa of empresas; track empresa.id) {
+            
+            <div class="contendor-img my-2">
+                <a [href]="empresa.enlace" target="_blank">
+                    <img [src]="empresa.img" [alt]="empresa.alt"  srcset="">
+                </a>
+            </div>
+
+        }
+</div>
+
