@@ -29,7 +29,7 @@ export class InicioComponent {
 
 
   ngOnInit(){
-    AOS.init();
+
   }
 
   
